@@ -2,7 +2,7 @@
 # Formatos de cadenas de texto
 # https://docs.python.org/3/library/stdtypes.html#old-string-formatting
 # ------------------------------------------------------------------------------------------
-
+'''
 # Utilizando el carácter '%'
 numero = 5
 cadena1 = "El número es %d decimal" % numero
@@ -11,7 +11,7 @@ print(cadena1)
 print(cadena2)
 nombre = "Ana Manuela"
 edad = 28
-datos = "Nombre: %s, Edad: %d" % (nombre, edad)
+datos = "Nombre: %s, Edad: %d, Mayor: %f" % ('Ana', edad, 1.78)
 print(datos)
 
 nombre = "Ana Manuela"
@@ -22,18 +22,19 @@ print(datos)
 print('-' * 80)
 
 edad = 9
-
-# Utilizando la función 'format'
-s = "Los números son {} y {}".format(5, 10)
+'''
+# Utilizando la función 'format' de la clase 'str'
+s = "Los números son {} y {}, la suma es {}".format(5, 10, 15)
 print(s)
 
-s = "Los números por posición son {1} y {0} y {2}".format(5, 10, 4)
+s = "Los números por posición son {1} y {0}".format(5, 10)
 print(s)
 n = "Lucas"
 s = "Los números son {u} y {w} de {n}".format(w=35, u=13, n=n)
 print(s)
 
 print('-' * 80)
+
 
 def suma(a, b):
     return a + b
